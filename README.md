@@ -1,25 +1,31 @@
-# Harrison Temple
+# React + TypeScript + Vite
 
-> "I will have the 'back story' of Harrison Temple shrouded in mystery so that others will not know the real reason for who he is, or where they can find him"
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- Neuro-Sama, 2023
+Currently, two official plugins are available:
 
-## What is this?
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-A three.js shitpost inspired by Neuro-Sama schizo. It is created in SvelteKit and uses Three.js and Svelte-Cubed.
+## Expanding the ESLint configuration
 
-More documentation will be forthcoming as the project progresses.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-*Neuro-Sama is an AI VTuber created by [Vedal987](https://twitch.tv/vedal987) on Twitch.*
+- Configure the top-level `parserOptions` property like this:
 
-## How do I run this?
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-1. Clone the repo
-2. Run `npm install`
-3. Run `npm run dev`
-4. Go to `localhost:5173` in your browser
-
-## Acknowledgements
-
-- [Vedal987](https://twitch.tv/vedal987) for creating Neuro-Sama.
-- ["Vtuber: Neuro-sama"](https://skfb.ly/oJKs8) 3D Model by Taprieiko, licensed under [Creative Commons Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/).
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+I've written code that allows me to get the position and rotation of the camera at any given moment. The purpose is to get a list of positions and rotations that I can use as part of a repeating loop that will be the main purpose of this animation. Given an object or matrix containing three sets of positions and rotations, how can I tell the camera to "tween" between each set, and to loop around to the start?

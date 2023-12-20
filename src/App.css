@@ -1,0 +1,31 @@
+.credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.debug {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0.5rem;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+body {
+    background: #3c5e4b;
+    color: #fff;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
