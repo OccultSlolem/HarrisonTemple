@@ -250,13 +250,9 @@ function SceneCanvas() {
 
   return (
     <>
-      <Canvas style={{ width: "100vw", height: "100vh" }} >
-        <color attach="background" args={['#454552']} />
-        {
-          import.meta.env.DEV && (
-            <OrbitControls />
-          )
-        }
+      <Canvas style={{ width: "100vw", height: "100vh" }}>
+        <color attach="background" args={["#454552"]} />
+        {import.meta.env.DEV && <OrbitControls />}
         <PerspectiveCamera makeDefault position={cameraPosition} />
         <CameraController
           onCameraChange={onCameraChange}
@@ -301,7 +297,11 @@ function Navbar() {
   return (
     <nav>
       {/* @ts-ignore */}
-      <marquee>Sometimes indecisiveness springs from self-doubt, and other times it's just because you're trapped in the Harrison Temple</marquee>
+      <marquee>
+        Sometimes indecisiveness springs from self-doubt, and other times it's
+        just because you're trapped in the Harrison Temple
+      {/* @ts-ignore */}
+      </marquee>
       <AudioManager />
 
       <img src="/GIGANEURO.png" alt="GIGANEURO" />
@@ -313,20 +313,54 @@ function Navbar() {
       <img className="neuro-look-left" src="/GIGANEURO.png" alt="GIGANEURO" />
 
       {/* Credits section */}
-      <button className="credits-button navbar-button" onClick={onCreditsClicked}>
+      <button
+        className="credits-button navbar-button"
+        onClick={onCreditsClicked}
+      >
         Credits
       </button>
       <dialog ref={dialogRef} className="credit">
         <ul>
           <li>
-            Created by <a href="https://ethan-hanlon.xyz">Ethan Hanlon</a>.
+            Created by{" "}
+            <a
+              href="https://ethan-hanlon.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ethan Hanlon
+            </a>
+            .
           </li>
           <li>
-            Model credit <a href="#">Taprieiko</a> under{" "}
-            <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>.
+            Model credit{" "}
+            <a
+              href="https://skfb.ly/oJKs8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Taprieiko
+            </a>{" "}
+            under{" "}
+            <a
+              href="http://creativecommons.org/licenses/by-nc/4.0/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CC BY-NC
+            </a>
+            .
           </li>
           <li>
-            Song: <a href="https://www.youtube.com/watch?v=QJJYpsA5tv8">Can You Feel My Heart</a> by Bring Me The Horizon.
+            Song:{" "}
+            <a
+              href="https://www.youtube.com/watch?v=QJJYpsA5tv8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Can You Feel My Heart
+            </a>{" "}
+            by Bring Me The Horizon.
           </li>
         </ul>
 
@@ -335,7 +369,7 @@ function Navbar() {
         </form>
       </dialog>
     </nav>
-  )
+  );
 }
 
 function App() {

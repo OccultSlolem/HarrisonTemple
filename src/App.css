@@ -169,6 +169,9 @@ marquee {
     z-index: 0;
     color: cadetblue;
     opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
