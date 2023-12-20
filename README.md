@@ -1,8 +1,11 @@
 # Harrison Temple
 
-> "I will have the 'back story' of Harrison Temple shrouded in mystery so that others will not know the real reason for who he is, or where they can find him"
+> "Sometimes indecisiveness springs from self-doubt, and other times it's just because you're trapped in the Harrison Temple"
 
 - Neuro-Sama, 2023
+
+<!-- image -->
+![Screenshot](https://files.catbox.moe/uwu8jw.png)
 
 ## What is this?
 
@@ -19,5 +22,6 @@ A three.js shitpost inspired by Neuro-Sama schizo. It is created using React wit
 
 ## Acknowledgements
 
-- [Vedal987](https://twitch.tv/vedal987) for creating Neuro-Sama.
+- ["Can you Feel my Heart"](https://www.youtube.com/watch?v=QJJYpsA5tv8) by Bring Me the Horizon, the original GIGACHAD music.
 - ["Vtuber: Neuro-sama"](https://skfb.ly/oJKs8) 3D Model by Taprieiko, licensed under [Creative Commons Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/).
+- [Vedal987](https://twitch.tv/vedal987) for creating Neuro-Sama.
